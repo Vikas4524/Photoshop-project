@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+.main_box{
+    background-image: url("photo.jpg");
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.btn_one {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left:16px ;
+    line-height: 60px;
+    cursor: pointer;
+    
+
+
+}
+
+.sidebar_menu{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    transition: 0.3s linear 0s;
+
+
+}
+
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 2px 2px rgba(255, 255, 255, 0.5);
+    line-height: 60px;
+}
+
+.sidebar_menu .logo a{
+    position:absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sidebar_menu .btn_two i{
+    color: gray;
+    font-size: 25px;
+    line-height: 60px;
+    position:absolute;
+    left:275px ;
+    opacity: 0;
+    cursor: pointer;
+    /* cursor: progress; */
+    
+
+}
+
+.sidebar_menu .menu{
+    /* color: white; */
+    position: absolute;
+    width: 100%;
+    top: 80px;
+
+}
+
+.sidebar_menu .menu li{
+    margin: 6px;
+    padding:14px 20px ;
+}
+
+.sidebar_menu .menu li i, a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.sidebar_menu .menu i{
+    padding-right:5px;
+}
+
+.sidebar_menu .social_media{
+    position: absolute;
+    left: 25%;
+    bottom: 50px;
+    /* padding: 50px; */
+    
+}
+ 
+.sidebar_menu .social_media i{
+    color: white;
+    padding: 3px;
+    opacity: 0.5;
+}
+
+#check{
+    display: none;
+}
+
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+  
+}
+
+.btn_one i:hover{
+    transition: 0.3s linear 0s;
+    font-size: 50px;
+}
+    
+.btn_two i:hover{
+    font-size: 30px;
+    transition: 0.3s linear 0s;
+
+}
+
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+#check:checked~.sidebar_menu{
+    position: absolute;
+    left:0px;
+
+    
+}
+
+#check:checked~.btn_one i{
+    opacity: 0;
+}
+
+#check:checked~.sidebar_menu i{
+    opacity: 1;
+}
+
